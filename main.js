@@ -495,12 +495,6 @@ require([
 
   $(document).ready(function () {
     $.material.init();
-    if (window.location.hash) {
-      var id = window.location.hash;
-      if (window.page != "#api-_") {
-        $(id).trigger("click");
-      }
-    }
   });
 
   $(window).on("resize", function () {

@@ -651,11 +651,12 @@ ul.nav-tabs {
 
 .search-reset{
     cursor:pointer;
+    width:5%;
 }
 .sidenav-search{
     position: fixed;
     top: 90px;
-    width: 400px;
+    width: 25%;
     z-index: 100000;
 }
 

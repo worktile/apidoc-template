@@ -87,7 +87,6 @@ require([
     $('#loader').remove();
     clickSideNav();
     menuClick();
-    resize();
   }
 
   function bindSearchResult(data) {
@@ -104,7 +103,6 @@ require([
     $('#loader').remove();
     clickSideNav();
     menuClick();
-    resize();
   }
 
   function initDocument() {
@@ -495,11 +493,13 @@ require([
 
   $(document).ready(function () {
     $.material.init();
+    var url = window.location.toString();
+    var id = url.split('#')[1];
+    if (id) {
+      $(document).scrollTop($(location.hash)[0].offsetTop);
+    }
   });
 
-  $(window).on("resize", function () {
-    resize();
-  }).trigger("resize");
 
   /**
    * click menu
@@ -512,16 +512,6 @@ require([
       $(".menu li").not($(this)).removeClass("active");
       $(this).addClass("active");
     });
-  }
-
-
-  /**
-   * resize window
-   */
-  function resize() {
-    $("html, body").height($(window).height());
-    $(".main, .menu").height($(window).height() - $(".header-panel").outerHeight() - $(".sidenav-search").height());
-    $(".pages").height($(window).height());
   }
 
   /**

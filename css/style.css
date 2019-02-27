@@ -605,13 +605,12 @@ ul.nav-tabs {
     top: 0;
     right: 0;
     z-index: 4;
-    padding: 0;
     overflow: auto;
 }
 .pages > div {
     padding: 0 5px;
     padding-top: 64px;
-    
+
 }
 
 .pages .header {
@@ -660,11 +659,11 @@ ul.nav-tabs {
     z-index: 100000;
 }
 
-a {font-size:16px} 
+a {font-size:16px}
 /* 未访问：蓝色、无下划线     */
-a:link {color: blue;} 
+a:link {color: blue;}
 /* 激活：红色   */
-a:active {color: red; }   
+a:active {color: red; }
 /* 已访问：purple、无下划线 */
-a:visited {color:purple;}    
-a:hover {color: red; text-decoration:underline;} 
+a:visited {color:purple;}
+a:hover {color: red; text-decoration:underline;}

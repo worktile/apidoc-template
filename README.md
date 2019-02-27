@@ -7,7 +7,7 @@ Material Design template theme for [apiDoc](https://apidocjs.com) RESTful API ge
 # Installation and Usage
 Clone the repo using Git:
 ```
-git clone https://github.com/talview/apidoc-template.git
+git clone https://github.com/worktile/apidoc-template.git
 ```
 
 Generate docs using new template

@@ -358,7 +358,6 @@ require([
           addArticleSettings(fields, entry);
           if (entry.groupTitle) { title = entry.groupTitle; }
           if (entry.groupDescription) { description = entry.groupDescription; }
-          console.log("article fields:", fields);
           articles.push({
             article: templateArticle(fields),
             group: entry.group,

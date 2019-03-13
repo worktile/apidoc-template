@@ -667,3 +667,14 @@ a:active {color: red; }
 /* 已访问：purple、无下划线 */
 a:visited {color:purple;}
 a:hover {color: red; text-decoration:underline;}
+
+.articleType {
+    margin-right: 40px;
+}
+.apiName {
+    color: red;
+}
+/* .projectItem:hover {
+    color: blue;
+    cursor: pointer;
+} */

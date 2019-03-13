@@ -319,6 +319,7 @@ require([
       var fields = {};
       var title = groupEntry;
       var description = '';
+      var label = "";
 
       // render all articles of a group
       api.forEach(function (entry) {
@@ -333,6 +334,23 @@ require([
               hidden: true
             };
           }
+          switch (entry.type.toLowerCase()) {
+            case 'post':
+              label = 'info';
+              break;
+            case 'get':
+              label = "success";
+              break;
+            case 'put':
+              label = 'warning';
+              break;
+            case 'delete' || 'del':
+              label = 'danger';
+              break;
+            default:
+              label = 'default';
+          }
+          fields.article.label = label;
           // add prefix URL for endpoint
           if (apiProject.url) {
             fields.article.url = fields.article.url.includes(apiProject.url) ? fields.article.url : apiProject.url + fields.article.url;

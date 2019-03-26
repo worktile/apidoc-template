@@ -660,8 +660,8 @@ ul.nav-tabs {
 }
 
 a {font-size:16px}
-/* 未访问：蓝色、无下划线     */
-a:link {color: blue;}
+/* 未访问：蓝色、无下划线     
+a:link {color: blue;}*/
 /* 激活：红色   */
 a:active {color: red; }
 /* 已访问：purple、无下划线 */
